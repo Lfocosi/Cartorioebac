@@ -180,6 +180,7 @@ int main()
         printf("\t1 - Registrar nomes\n");
         printf("\t2 - Consultar nomes\n");
         printf("\t3 - Deletar nomes\n");
+        printf("\t4 - Sair do sistema\n\n");
         printf("Opção: ");
         
         // salvando a opção digitada pelo usuario
@@ -200,6 +201,12 @@ int main()
                 break;
             case 3:
                 deletar();
+                break;
+            case 4:
+                printf("Obrigado por utilizar o sistema!\n\n");
+
+                // fazendo com que o programa pare de repetir
+                laco = 0;
                 break;
             default:
                 printf("Essa opção não esta disponivel!\n\n");
