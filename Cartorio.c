@@ -150,23 +150,6 @@ int main()
     // iniciando variaveis {opção: responsavel pelo contrlode da pagina, laço: responsavel pelo controle da volta ao menu}
     int opcao = 0;
     int laco = 1;
-    char senhaUsuario[10] = "a";
-
-    // garantindo aceeso para adim
-    printf("### Cartório da EBAC ###");
-    printf("Login de administrador!\n\n");
-    printf("Digite dua senha:");
-    // guardando a senha digitada na variavel
-    scanf("%s", &senhaUsuario);
-
-    // casso a senha esteja errada, notifique o usuario e encerre o programa
-    // comparando as strings pelo resultado na memoria (0 se for igual)
-    if(strcmp(senhaUsuario, "admin") != 0)
-    {
-        system("cls");
-        printf("Senha incorreta!\n\n");
-        return 0;
-    }
 
     // inicio da repetição que garante a volta para o menu
     for(laco = 1; laco == 1;)
